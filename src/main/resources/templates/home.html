@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Bienvenido a su recarga online</h1>
+<form th:action="@{/guardar}" method="post">
+ <ul>
+  <li>
+    <label for="name">Operador:</label>
+    <input type="text" id="operador" name="Operadorr">
+  </li>
+  <li>
+    <label for="mail">Usuario:</label>
+    <input type="text" id="mail" name="usuario">
+  </li>
+  <li>
+    <label for="msg">cc vendedor:</label>
+    <input type="text" id="cc" name="fk_id_vendedor">
+  </li>
+    <li>
+    <label for="msg">valor:</label>
+    <input type="number" id="valor" name="valor">
+  </li>
+  <li>
+    <label for="msg">fecha(Ideal Automatico):</label>
+    <input type="date" id="fecha" name="fecha">
+  </li>
+  	<button type="submit" class="btn btn-success">Recargar</button>
+	</form>
+ </ul>
+</form>
+
+</body>
+</html>
